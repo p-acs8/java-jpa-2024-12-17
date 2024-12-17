@@ -1,0 +1,11 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="pu" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres"/>
+            <property name="jakarta.persistence.jdbc.user" value="employees"/>
+            <property name="jakarta.persistence.jdbc.password" value="employees"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+        </properties>
+    </persistence-unit>
+</persistence>
